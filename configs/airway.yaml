@@ -1,0 +1,44 @@
+# Airway dataset analysis configuration
+# This configuration is used for validating the pipeline against the
+# Bioconductor airway dataset with R/Bioconductor DESeq2 reference outputs.
+
+project_name: airway_demo
+species: human
+gene_id_type: ensembl
+condition_column: dex
+reference_level: untrt
+results_dir: results/airway_demo
+
+design:
+  formula: "~ dex"
+  variables:
+    - dex
+
+contrasts:
+  - name: dex_trt_vs_untrt
+    variable: dex
+    numerator: trt
+    denominator: untrt
+
+filtering:
+  min_count: 10
+  min_samples: 3
+
+pydeseq2:
+  alpha: 0.05
+  cooks_filter: true
+  independent_filter: true
+
+deg:
+  padj_threshold: 0.05
+  log2fc_threshold: 1.0
+
+go:
+  ontology:
+    - BP
+    - MF
+    - CC
+  method: offline_ora
+  padj_method: fdr_bh
+  min_genes_per_term: 5
+  max_genes_per_term: 500

@@ -1,0 +1,37 @@
+Metadata-Version: 2.4
+Name: deg-pipeline
+Version: 0.1.0
+Summary: Reproducible RNA-seq DEG analysis pipeline using PyDESeq2
+Author: Try DEG Pipeline Contributors
+License: MIT
+Keywords: bioinformatics,rna-seq,differential-expression,deseq2,pydeseq2
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: pandas>=2.0.0
+Requires-Dist: numpy>=1.24.0
+Requires-Dist: scipy>=1.10.0
+Requires-Dist: statsmodels>=0.14.0
+Requires-Dist: pydeseq2>=0.4.0
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: matplotlib>=3.7.0
+Requires-Dist: seaborn>=0.12.0
+Requires-Dist: scikit-learn>=1.3.0
+Requires-Dist: jinja2>=3.1.0
+Requires-Dist: goatools>=1.3.0
+Requires-Dist: markdown>=3.4.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.0.0; extra == "dev"
+Requires-Dist: ruff>=0.1.0; extra == "dev"
+Requires-Dist: mypy>=1.0.0; extra == "dev"
+Provides-Extra: interactive
+Requires-Dist: plotly>=5.15.0; extra == "interactive"
+
+# Try_DEG_Pipeline
+

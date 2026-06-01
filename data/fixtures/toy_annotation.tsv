@@ -1,0 +1,11 @@
+gene_id	gene_symbol	entrez_id	gene_name	biotype
+ENSG000001	GENE_A	1001	Gene A description	protein_coding
+ENSG000002	GENE_B	1002	Gene B description	protein_coding
+ENSG000003	GENE_C	1003	Gene C description	protein_coding
+ENSG000004	GENE_D	1004	Gene D description	protein_coding
+ENSG000005	GENE_E	1005	Gene E description	protein_coding
+ENSG000006	GENE_F	1006	Gene F description	protein_coding
+ENSG000007	GENE_G	1007	Gene G description	protein_coding
+ENSG000008	GENE_H	1008	Gene H description	protein_coding
+ENSG000009	GENE_I	1009	Gene I description	protein_coding
+ENSG000010	GENE_J	1010	Gene J description	protein_coding

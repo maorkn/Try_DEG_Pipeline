@@ -1,0 +1,44 @@
+# Example project configuration template
+# Copy this file and modify for your own analysis.
+
+project_name: my_project
+species: human  # or mouse
+gene_id_type: ensembl
+condition_column: condition
+reference_level: control
+results_dir: results/my_project
+
+design:
+  formula: "~ condition"
+  variables:
+    - condition
+
+contrasts:
+  - name: treated_vs_control
+    variable: condition
+    numerator: treated
+    denominator: control
+
+filtering:
+  min_count: 10
+  # min_samples: If not set, uses smallest group size
+  # min_samples: 3
+
+pydeseq2:
+  alpha: 0.05
+  cooks_filter: true
+  independent_filter: true
+
+deg:
+  padj_threshold: 0.05
+  log2fc_threshold: 1.0
+
+go:
+  ontology:
+    - BP
+    - MF
+    - CC
+  method: offline_ora
+  padj_method: fdr_bh
+  min_genes_per_term: 5
+  max_genes_per_term: 500
