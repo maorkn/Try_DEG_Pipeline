@@ -9,10 +9,11 @@ src/deg_pipeline/io.py
 src/deg_pipeline/logging_utils.py
 src/deg_pipeline/plotting.py
 src/deg_pipeline/pydeseq2_adapter.py
+src/deg_pipeline/qc.py
 src/deg_pipeline/report.py
+src/deg_pipeline/validation.py
 src/deg_pipeline.egg-info/PKG-INFO
 src/deg_pipeline.egg-info/SOURCES.txt
 src/deg_pipeline.egg-info/dependency_links.txt
-src/deg_pipeline.egg-info/entry_points.txt
 src/deg_pipeline.egg-info/requires.txt
 src/deg_pipeline.egg-info/top_level.txt
